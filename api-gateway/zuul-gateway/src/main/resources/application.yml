@@ -1,0 +1,22 @@
+
+zuul:
+  routes:
+    base-center: #活动
+      path: /base/** #配置请求URL的请求规则
+      serviceId: base-center #指定Eureka注册中心中的服务id
+    user-center: #活动
+      path: /user/** #配置请求URL的请求规则
+      serviceId: user-center #指定Eureka注册中心中的服务id
+    article-center: #活动
+      path: /article/** #配置请求URL的请求规则
+      serviceId: article-center #指定Eureka注册中心中的服务id
+    qa-center: #活动
+      path: /qa/** #配置请求URL的请求规则
+      serviceId: qa-center #指定Eureka注册中心中的服务id
+
+    search-center: #活动
+      path: /search/** #配置请求URL的请求规则
+      serviceId: search-center #指定Eureka注册中心中的服务id
+    spit-center: #活动
+      path: /spit/** #配置请求URL的请求规则
+      serviceId: spit-center #指定Eureka注册中心中的服务id

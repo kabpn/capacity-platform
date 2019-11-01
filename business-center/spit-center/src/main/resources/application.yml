@@ -1,0 +1,17 @@
+server:
+  port: 9006
+spring:
+  application:
+    name: spit-center
+  data:
+    mongodb:
+      host: 192.168.2.172
+      database: spitdb
+  redis:
+    host: 192.168.2.172
+    password: root
+logging:
+   level:
+      com:
+        capacity:
+          spit: debug

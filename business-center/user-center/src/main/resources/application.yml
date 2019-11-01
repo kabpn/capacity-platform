@@ -1,0 +1,29 @@
+server:
+  port: 9008
+spring:
+  application:
+    name: user-center
+  datasource:
+    url: jdbc:mysql://192.168.248.129:3306/tensquare_user?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&useSSL=false&zeroDateTimeBehavior=convertToNull
+    username: root
+    password: root@123
+    driver-class-name: com.mysql.jdbc.Driver
+  mapper-locations: classpath:/entity/*Mapper.xml
+  #实体扫描，多个package用逗号或者分号分隔
+  typeAliasesPackage: com.capacity.user.entity
+  #redis配置
+  redis:
+    host: 192.168.248.129
+    password: root
+  #rabbitmq配置
+  rabbitmq:
+        host: 192.168.248.129
+        port: 5672
+        username: root
+        password: root
+#日志输出等级
+logging:
+   level:
+      com:
+        capacity:
+          user: debug
